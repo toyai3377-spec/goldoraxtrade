@@ -6,132 +6,132 @@
 <title>เกมน้ำเต้าปูปลา | GoldoraX</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap');
-body { 
-    font-family: 'Prompt', sans-serif; 
-    background: linear-gradient(180deg, #020024 0%, #000045 35%, #080064 100%); 
-    color: #fff; 
-    text-align: center; 
-    min-height: 100vh; 
-    margin: 0; 
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body { 
+    font-family: 'Prompt', sans-serif; 
+    background: linear-gradient(180deg, #020024 0%, #000045 35%, #080064 100%); 
+    color: #fff; 
+    text-align: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1 {
-    color: #00ffff; 
-    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
-    margin-bottom: 10px;
-    font-size: 2.8rem;
+    color: #00ffff; 
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    font-size: 2.8rem;
 }
-header { 
-    width: 90%;
-    max-width: 600px;
-    margin-bottom: 10px;
-    background: rgba(17, 0, 92, 0.5); 
-    backdrop-filter: blur(5px);
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+header { 
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    background: rgba(17, 0, 92, 0.5); 
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 5px 0;
 }
 .username-display { color: #ffd700; font-weight: bold; }
 .balance-display { color: #76ff03; font-weight: bold; font-size: 1.5rem; }
 
 .action-buttons {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    max-width: 500px;
-    margin: 10px auto 20px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto 20px auto;
 }
 .action-btn {
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-    width: 45%;
-    transform: translateY(0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 45%;
+    transform: translateY(0);
 }
 .deposit-btn {
-    background: linear-gradient(45deg, #76ff03, #388e3c);
-    color: #000;
-    box-shadow: 0 4px 0 #1b5e20, 0 0 15px #76ff03;
+    background: linear-gradient(45deg, #76ff03, #388e3c);
+    color: #000;
+    box-shadow: 0 4px 0 #1b5e20, 0 0 15px #76ff03;
 }
 .deposit-btn:hover {
-    background: linear-gradient(45deg, #aeff03, #66bb6a);
-    transform: translateY(-4px);
-    box-shadow: 0 4px 0 #1b5e20, 0 0 25px #76ff03;
+    background: linear-gradient(45deg, #aeff03, #66bb6a);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 0 #1b5e20, 0 0 25px #76ff03;
 }
 .withdraw-btn {
-    background: linear-gradient(45deg, #ff5757, #c62828);
-    color: white;
-    box-shadow: 0 4px 0 #8c0000, 0 0 15px #ff5757;
+    background: linear-gradient(45deg, #ff5757, #c62828);
+    color: white;
+    box-shadow: 0 4px 0 #8c0000, 0 0 15px #ff5757;
 }
 .withdraw-btn:hover {
-    background: linear-gradient(45deg, #ff8a80, #ef5350);
-    transform: translateY(-4px);
-    box-shadow: 0 4px 0 #8c0000, 0 0 25px #ff5757;
+    background: linear-gradient(45deg, #ff8a80, #ef5350);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 0 #8c0000, 0 0 25px #ff5757;
 }
 
 .animals {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    width: 90%;
-    max-width: 500px;
-    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
 }
 .animal-btn {
-    padding: 18px;
-    background: linear-gradient(135deg, #1c0082, #0b0047); 
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    font-size: 3rem;
-    line-height: 1;
-    transform: translateY(-2px); 
-    box-shadow: 0 5px 0 0 #08003d, inset 0 0 10px rgba(255,255,255,0.1), 0 10px 20px rgba(0,0,0,0.9);
+    padding: 18px;
+    background: linear-gradient(135deg, #1c0082, #0b0047); 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-size: 3rem;
+    line-height: 1;
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 0 0 #08003d, inset 0 0 10px rgba(255,255,255,0.1), 0 10px 20px rgba(0,0,0,0.9);
 }
 .animal-btn span {
-    display: block;
-    font-size: 1.1rem; 
-    color: #ff99ff;
-    margin-top: 8px;
-    font-weight: 600;
+    display: block;
+    font-size: 1.1rem; 
+    color: #ff99ff;
+    margin-top: 8px;
+    font-weight: 600;
 }
 .animal-btn:hover {
-    transform: translateY(-8px) scale(1.08);
-    box-shadow: 0 4px 0 #05002b, 0 18px 30px rgba(0,0,0,1.2), 0 0 35px #00ffff;
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 4px 0 #05002b, 0 18px 30px rgba(0,0,0,1.2), 0 0 35px #00ffff;
 }
 .animal-btn.selected {
-    background: linear-gradient(135deg, gold, #ffec85);
-    border-color: transparent;
-    transform: translateY(-4px); 
-    box-shadow: 0 2px 0 #b8860b, 0 0 40px gold, 0 0 70px rgba(255, 215, 0, 0.7);
+    background: linear-gradient(135deg, gold, #ffec85);
+    border-color: transparent;
+    transform: translateY(-4px); 
+    box-shadow: 0 2px 0 #b8860b, 0 0 40px gold, 0 0 70px rgba(255, 215, 0, 0.7);
 }
 
 .controls {
-    background: rgba(11,0,71,0.6);
-    backdrop-filter: blur(5px);
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8), 0 0 5px #ff99ff;
-    width: 90%;
-    max-width: 600px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(11,0,71,0.6);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8), 0 0 5px #ff99ff;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 .dice-area { font-size: 4rem; margin: 15px 0; min-height: 60px; font-weight: bold; color: #00ffff; text-shadow: 0 0 10px #00ffff; }
 .result-area { min-height: 30px; margin-bottom: 15px; font-size: 1.6rem; font-weight: bold; color: #76ff03; text-shadow: 0 0 8px #76ff03; }
@@ -154,49 +154,49 @@ input[type="number"] { width:150px; padding:10px; border-radius:20px; border:2px
 <body>
 
 <div id="messageModal" class="modal">
-  <div class="modal-content">
-    <p id="modalMessage"></p>
-    <button onclick="closeModal()">ตกลง</button>
-  </div>
+  <div class="modal-content">
+    <p id="modalMessage"></p>
+    <button onclick="closeModal()">ตกลง</button>
+  </div>
 </div>
 
 <h1>เกมน้ำเต้าปูปลา</h1>
 
 <header>
-  <div class="user-info">
-    <div>ผู้เล่น: <span id="usernameDisplay" class="username-display">...</span></div>
-    <div>ยอดเงิน: <span id="balanceDisplay" class="balance-display">0 💰</span></div>
-  </div>
+  <div class="user-info">
+    <div>ผู้เล่น: <span id="usernameDisplay" class="username-display">...</span></div>
+    <div>ยอดเงิน: <span id="balanceDisplay" class="balance-display">0 💰</span></div>
+  </div>
 </header>
 
 <div class="action-buttons">
-  <button class="action-btn deposit-btn" onclick="openSupport(['https://lin.ee/Mm1caQx','https://wa.me/66652212194'])">💰 ฝากเงิน</button>
-  <button class="action-btn withdraw-btn" onclick="openSupport(['https://lin.ee/Mm1caQx','https://wa.me/66652212194'])">💳 ถอนเงิน</button>
+  <button class="action-btn deposit-btn" onclick="openSupport(['https://lin.ee/Mm1caQx'])">💰 ฝากเงิน</button>
+  <button class="action-btn withdraw-btn" onclick="openSupport(['https://lin.ee/Mm1caQx'])">💳 ถอนเงิน</button>
 </div>
 
 <div class="animals">
-  <div class="animal-btn" data-animal="ปลา">🐟 <span>ปลา</span></div>
-  <div class="animal-btn" data-animal="กุ้ง">🦐 <span>กุ้ง</span></div>
-  <div class="animal-btn" data-animal="น้ำเต้า">🍈 <span>น้ำเต้า</span></div>
-  <div class="animal-btn" data-animal="เสือ">🐯 <span>เสือ</span></div>
-  <div class="animal-btn" data-animal="ปู">🦀 <span>ปู</span></div>
-  <div class="animal-btn" data-animal="ไก่">🐓 <span>ไก่</span></div>
+  <div class="animal-btn" data-animal="ปลา">🐟 <span>ปลา</span></div>
+  <div class="animal-btn" data-animal="กุ้ง">🦐 <span>กุ้ง</span></div>
+  <div class="animal-btn" data-animal="น้ำเต้า">🍈 <span>น้ำเต้า</span></div>
+  <div class="animal-btn" data-animal="เสือ">🐯 <span>เสือ</span></div>
+  <div class="animal-btn" data-animal="ปู">🦀 <span>ปู</span></div>
+  <div class="animal-btn" data-animal="ไก่">🐓 <span>ไก่</span></div>
 </div>
 
 <div class="controls">
-  <div class="dice-area" id="diceArea">...</div>
-  <div class="result-area" id="result">พร้อมเดิมพัน!</div>
-  <div class="chip-buttons">
-    <button class="chip-btn" data-amount="50">50</button>
-    <button class="chip-btn" data-amount="100">100</button>
-    <button class="chip-btn" data-amount="200">200</button>
-    <button class="chip-btn" data-amount="500">500</button>
-    <button class="chip-btn" data-amount="1000">1000</button>
-  </div>
-  <div style="display:flex; justify-content:center; align-items:center;">
-    <input type="number" id="betAmount" placeholder="จำนวนเงินเดิมพัน" value="100" min="10">
-    <button id="roll">หมุน!</button>
-  </div>
+  <div class="dice-area" id="diceArea">...</div>
+  <div class="result-area" id="result">พร้อมเดิมพัน!</div>
+  <div class="chip-buttons">
+    <button class="chip-btn" data-amount="50">50</button>
+    <button class="chip-btn" data-amount="100">100</button>
+    <button class="chip-btn" data-amount="200">200</button>
+    <button class="chip-btn" data-amount="500">500</button>
+    <button class="chip-btn" data-amount="1000">1000</button>
+  </div>
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <input type="number" id="betAmount" placeholder="จำนวนเงินเดิมพัน" value="100" min="10">
+    <button id="roll">หมุน!</button>
+  </div>
 </div>
 
 <a href="index_Version8.html" style="margin-top:20px; color:#ccc; text-decoration:none;">🏠 กลับหน้าหลัก</a>
@@ -206,12 +206,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebas
 import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyACTSU6LYObSv5gEAfKJt4Yr4LaCCAkQvw",
-  authDomain: "goldorax-game.firebaseapp.com",
-  projectId: "goldorax-game",
-  storageBucket: "goldorax-game.firebasestorage.app",
-  messagingSenderId: "601999451419",
-  appId: "1:601999451419:web:f0782a8437b493eb8f5b"
+  apiKey: "AIzaSyACTSU6LYObSv5gEAfKJt4Yr4LaCCAkQvw",
+  authDomain: "goldorax-game.firebaseapp.com",
+  projectId: "goldorax-game",
+  storageBucket: "goldorax-game.firebasestorage.app",
+  messagingSenderId: "601999451419",
+  appId: "1:601999451419:web:f0782a8437b493eb8f5b"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -237,84 +237,84 @@ function showModal(message){ modalMessage.textContent = message; messageModal.st
 window.closeModal = function(){ messageModal.style.display = 'none'; }
 
 function openSupport(urls){
-  urls.forEach(url=>{ window.open(url,'_blank','width=500,height=700'); });
+  urls.forEach(url=>{ window.open(url,'_blank','width=500,height=700'); });
 }
 
 document.addEventListener('DOMContentLoaded', async ()=>{
-  currentUsername = sessionStorage.getItem('currentUsername');
-  if(!currentUsername){
-    showModal('กรุณาเข้าสู่ระบบก่อนเล่นเกม');
-    setTimeout(()=>window.location.href='login_Version4.html',2000);
-    return;
-  }
-  usernameDisplay.textContent = currentUsername;
-  await loadBalance();
+  currentUsername = sessionStorage.getItem('currentUsername');
+  if(!currentUsername){
+    showModal('กรุณาเข้าสู่ระบบก่อนเล่นเกม');
+    setTimeout(()=>window.location.href='login_Version4.html',2000);
+    return;
+  }
+  usernameDisplay.textContent = currentUsername;
+  await loadBalance();
 
-  document.querySelectorAll('.animal-btn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const animal = btn.getAttribute('data-animal');
-      if(selected.has(animal)){ selected.delete(animal); btn.classList.remove('selected'); }
-      else { if(selected.size<3){ selected.add(animal); btn.classList.add('selected'); } else { showModal('เลือกได้สูงสุด 3 ตัวเท่านั้น!'); } }
-    });
-  });
+  document.querySelectorAll('.animal-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const animal = btn.getAttribute('data-animal');
+      if(selected.has(animal)){ selected.delete(animal); btn.classList.remove('selected'); }
+      else { if(selected.size<3){ selected.add(animal); btn.classList.add('selected'); } else { showModal('เลือกได้สูงสุด 3 ตัวเท่านั้น!'); } }
+    });
+  });
 
-  document.querySelectorAll('.chip-btn').forEach(chip=>{
-    chip.addEventListener('click', ()=>{ betInput.value = chip.getAttribute('data-amount'); });
-  });
+  document.querySelectorAll('.chip-btn').forEach(chip=>{
+    chip.addEventListener('click', ()=>{ betInput.value = chip.getAttribute('data-amount'); });
+  });
 });
 
 async function loadBalance(){
-  if(!currentUsername) return;
-  try{
-    const userRef = doc(db,'players',currentUsername);
-    const docSnap = await getDoc(userRef);
-    balance = docSnap.exists()? docSnap.data().balance||0 : 0;
-    balanceDisplay.textContent = balance.toLocaleString()+' 💰';
-  }catch(e){ console.error(e); showModal('เกิดข้อผิดพลาดในการโหลดข้อมูลยอดเงิน!'); }
+  if(!currentUsername) return;
+  try{
+    const userRef = doc(db,'players',currentUsername);
+    const docSnap = await getDoc(userRef);
+    balance = docSnap.exists()? docSnap.data().balance||0 : 0;
+    balanceDisplay.textContent = balance.toLocaleString()+' 💰';
+  }catch(e){ console.error(e); showModal('เกิดข้อผิดพลาดในการโหลดข้อมูลยอดเงิน!'); }
 }
 
 async function saveBalance(newBalance){
-  if(!currentUsername) return;
-  try{
-    const userRef = doc(db,'players',currentUsername);
-    await updateDoc(userRef,{ balance: newBalance });
-    balance = newBalance;
-    balanceDisplay.textContent = balance.toLocaleString()+' 💰';
-  }catch(e){ console.error(e); showModal('เกิดข้อผิดพลาดในการบันทึกยอดเงิน!'); await loadBalance(); }
+  if(!currentUsername) return;
+  try{
+    const userRef = doc(db,'players',currentUsername);
+    await updateDoc(userRef,{ balance: newBalance });
+    balance = newBalance;
+    balanceDisplay.textContent = balance.toLocaleString()+' 💰';
+  }catch(e){ console.error(e); showModal('เกิดข้อผิดพลาดในการบันทึกยอดเงิน!'); await loadBalance(); }
 }
 
 rollButton.addEventListener('click', async ()=>{
-  const betAmount = parseInt(betInput.value);
-  if(isNaN(betAmount)||betAmount<=0){ showModal('กรุณาใส่จำนวนเงินเดิมพันที่ถูกต้อง!'); return; }
-  if(balance<betAmount){ showModal('ยอดเงินไม่เพียงพอ! กรุณาฝากเงินผ่าน LINE OA/WhatsApp'); return; }
-  if(selected.size===0){ showModal('กรุณาเลือกสัตว์ก่อน!'); return; }
+  const betAmount = parseInt(betInput.value);
+  if(isNaN(betAmount)||betAmount<=0){ showModal('กรุณาใส่จำนวนเงินเดิมพันที่ถูกต้อง!'); return; }
+  if(balance<betAmount){ showModal('ยอดเงินไม่เพียงพอ! กรุณาฝากเงินผ่าน LINE OA/WhatsApp'); return; }
+  if(selected.size===0){ showModal('กรุณาเลือกสัตว์ก่อน!'); return; }
 
-  const newBalanceAfterBet = balance - betAmount;
-  await saveBalance(newBalanceAfterBet);
-  rollButton.disabled = true;
-  diceArea.textContent = '🎲 หมุน...';
-  result.textContent = 'รอลุ้นผล...';
+  const newBalanceAfterBet = balance - betAmount;
+  await saveBalance(newBalanceAfterBet);
+  rollButton.disabled = true;
+  diceArea.textContent = '🎲 หมุน...';
+  result.textContent = 'รอลุ้นผล...';
 
-  setTimeout(async()=>{
-    const diceResults = Array.from({length:3}, ()=>animals[Math.floor(Math.random()*animals.length)]);
-    diceArea.textContent = diceResults.map(a=>emojis[animals.indexOf(a)]).join(' ');
-    let hitCount = 0; diceResults.forEach(a=>{ if(selected.has(a)) hitCount++; });
-    let finalBalance = newBalanceAfterBet;
-    let winAmount = 0;
+  setTimeout(async()=>{
+    const diceResults = Array.from({length:3}, ()=>animals[Math.floor(Math.random()*animals.length)]);
+    diceArea.textContent = diceResults.map(a=>emojis[animals.indexOf(a)]).join(' ');
+    let hitCount = 0; diceResults.forEach(a=>{ if(selected.has(a)) hitCount++; });
+    let finalBalance = newBalanceAfterBet;
+    let winAmount = 0;
 
-    if(hitCount>0){
-      if(hitCount===1) winAmount=betAmount*1;
-      else if(hitCount===2) winAmount=betAmount*2;
-      else winAmount=betAmount*3;
-      finalBalance += betAmount + winAmount;
-      result.textContent = `🎉 คุณชนะ! ถูก ${hitCount} ตัว (+${winAmount.toLocaleString()} 💰)`;
-    } else { result.textContent = `😭 คุณแพ้! ลองใหม่อีกครั้ง`; }
+    if(hitCount>0){
+      if(hitCount===1) winAmount=betAmount*1;
+      else if(hitCount===2) winAmount=betAmount*2;
+      else winAmount=betAmount*3;
+      finalBalance += betAmount + winAmount;
+      result.textContent = `🎉 คุณชนะ! ถูก ${hitCount} ตัว (+${winAmount.toLocaleString()} 💰)`;
+    } else { result.textContent = `😭 คุณแพ้! ลองใหม่อีกครั้ง`; }
 
-    await saveBalance(finalBalance);
-    selected.clear();
-    document.querySelectorAll('.animal-btn').forEach(btn=>btn.classList.remove('selected'));
-    rollButton.disabled = false;
-  },1500);
+    await saveBalance(finalBalance);
+    selected.clear();
+    document.querySelectorAll('.animal-btn').forEach(btn=>btn.classList.remove('selected'));
+    rollButton.disabled = false;
+  },1500);
 });
 </script>
 
